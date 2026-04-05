@@ -4,7 +4,109 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
+}
+
+body {
+  height: 100vh;
+  background-color: oklch(97.515% 0.01276 244.483deg);
+  color: oklch(17.764% 0.00002 271.152deg);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.toaster-generator {
+  width: 400px;
+  height: 280px;
+  padding: 13px 16px;
+  background-color: oklch(100% 0.00011 271.152deg);
+  box-shadow: 0px 10px 16px oklch(0% 0 0deg / 0.3);
+  border-radius: 11px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toaster-generator .field-wrapper {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.field-container .field-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  font-size: clamp(14px, 1vw, 16px);
+  font-weight: 400;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.input-full-width {
+  width: 100%;
+}
+
+.input-width-half {
+  width: 50%;
+}
+
+.gen-btn {
+  text-align: center;
+  width: 100%;
+  padding-block: 7px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  background-color: oklch(32.109% 0.00004 271.152deg);
+  color: oklch(100% 0.00011 271.152deg);
+  outline: none;
+  border: 1px solid oklch(0% 0 0deg);
+  border-radius: 6px;
+  opacity: 1;
+}
+.gen-btn:hover {
+  opacity: 0.9;
+}
+
+.input {
+  font-size: clamp(14px, 1vw, 16px);
+  padding: 4px 6px;
+  outline: none;
+}
+
+.toaster-stack {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 5px;
+}
+.toaster-stack .toaster {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 8px 10px;
+  border-radius: 8px;
 }/*# sourceMappingURL=style.css.map */

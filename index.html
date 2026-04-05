@@ -22,11 +22,87 @@
       href="./favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="./favicon/site.webmanifest" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <main>
-        
+      <div class="toaster-generator">
+        <div class="field-wrapper">
+          <h3>Toaster Notification Generator</h3>
+          <div class="field-container">
+            <label for="toaster-text" class="full-width field-item">
+              <input
+                type="text"
+                name="toaster-text"
+                id="toaster-text"
+                placeholder="Enter message..."
+                class="input  input-full-width"
+              />
+            </label>
+          </div>
+          <div class="field-container">
+            <label for="positionX" class="field-item half-width">
+              X-Axis Value
+              <select name="positionX" id="positionX" class="input input-width-half">
+                <option value="left">Left</option>
+                <option value="center">Center</option>
+                <option value="right">Right</option>
+              </select>
+            </label>
+            <label for="positionX" class="field-item half-width">
+              Y-Axis Value
+              <select name="positionX" id="positionX" class="input input-width-half">
+                <option value="top">Top</option>
+                <option value="Center">Center</option>
+                <option value="Bottom">Bottom</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-container">
+            <label for="bg-color" class="field-item half-width">
+              BG Color
+              <input type="color" name="bg-color" id="bg-color" class="input  input-width-half" />
+            </label>
+            <label for="text-color" class="field-item half-width">
+              Text Color
+              <input
+                type="color"
+                name="text-color"
+                id="text-color"
+                class="input input-width-half"
+              />
+            </label>
+          </div>
+          <div class="field-container">
+            <label for="timeout" class="field-item half-width">
+                Timeout
+              <input
+                type="number"
+                name="timeout"
+                id="timeout"
+                class="input input-width-half"
+                placeholder="eg. 3"
+              />
+            </label>
+            <label for="interval" class="field-item half-width">
+                Interval
+              <input
+                type="number"
+                name="interval"
+                id="interval"
+                class="input input-width-half"
+                placeholder="eg. 1"
+              />
+            </label>
+          </div>
+          <button type="button" class="gen-btn">Generate</button>
+        </div>
+      </div>
+      <!-- <div class="toaster-stack">
+        <div class="toaster">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div> -->
     </main>
     <script src="script.js"></script>
   </body>
