@@ -44,24 +44,28 @@
             <label for="positionX" class="field-item half-width">
               X-Axis Value
               <select name="positionX" id="positionX" class="input input-width-half">
-                <option value="left">Left</option>
-                <option value="center">Center</option>
+                <option value="left" selected>Left</option>
                 <option value="right">Right</option>
               </select>
             </label>
-            <label for="positionX" class="field-item half-width">
+            <label for="positionY" class="field-item half-width">
               Y-Axis Value
-              <select name="positionX" id="positionX" class="input input-width-half">
-                <option value="top">Top</option>
-                <option value="Center">Center</option>
-                <option value="Bottom">Bottom</option>
+              <select name="positionY" id="positionY" class="input input-width-half">
+                <option value="top" selected>Top</option>
+                <option value="bottom">Bottom</option>
               </select>
             </label>
           </div>
           <div class="field-container">
             <label for="bg-color" class="field-item half-width">
               BG Color
-              <input type="color" name="bg-color" id="bg-color" class="input  input-width-half" />
+              <input 
+                type="color"
+                name="bg-color"
+                id="bg-color"
+                class="input  input-width-half"
+                value="#000000"
+              />
             </label>
             <label for="text-color" class="field-item half-width">
               Text Color
@@ -70,6 +74,7 @@
                 name="text-color"
                 id="text-color"
                 class="input input-width-half"
+                value="#ffffff"
               />
             </label>
           </div>
@@ -84,12 +89,12 @@
                 placeholder="eg. 3"
               />
             </label>
-            <label for="interval" class="field-item half-width">
-                Interval
+            <label for="delay" class="field-item half-width">
+                Delay
               <input
                 type="number"
-                name="interval"
-                id="interval"
+                name="delay"
+                id="delay"
                 class="input input-width-half"
                 placeholder="eg. 1"
               />
@@ -98,11 +103,8 @@
           <button type="button" class="gen-btn">Generate</button>
         </div>
       </div>
-      <!-- <div class="toaster-stack">
-        <div class="toaster">
-            <p>Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-      </div> -->
+      <div class="toaster-stack">
+      </div>
     </main>
     <script src="script.js"></script>
   </body>
